@@ -1,4 +1,4 @@
-// Currents current date moment object
+// Current date moment object
 var current = moment().format('MMMM Do YYYY');
 
 // Displays date on page
