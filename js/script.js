@@ -12,13 +12,11 @@ currentDay.innerHTML = current;
 // Upon click it will open text box to edit
 $(".saveBtn").click(function(event) {
     event.preventDefault();
-    var textInput = $(this).siblings(".description").val();
-    console.log(textInput);
-    saveItem();
+    var textInput = $(this).siblings("description","hour-1").val();
+ 
+    localStorage.setItem("hour-1", textInput);
 });
 
-var saveItem= function() {
-localStorage.setItem("scheduledItems", JSON.stringify(scheduledItems));
-};
 
-var obtainIteam = localStorage.getItem("scheduledItems");
+
+var obtainIteam = localStorage.getItem("saveItem");
