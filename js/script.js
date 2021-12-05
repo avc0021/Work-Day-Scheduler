@@ -10,13 +10,15 @@ var displayCurrent = document.getElementById('currentDay');
 currentDay.innerHTML = current;
 
 // Upon click it will open text box to edit
-$(".saveBtn").click(function(event) {
+$(".btn-saveBtn").click(function(event) {
     event.preventDefault();
-    var textInput = $(this).siblings("description","hour-1").val();
- 
+    var textInput = $(this).siblings('hour-1', 'description').val();
+// Save hour and text submitted
     localStorage.setItem("hour-1", textInput);
 });
 
 
-
+// Pull saved info from local storage
 var obtainIteam = localStorage.getItem("saveItem");
+
+// Conditional statement to determine what color to display based on time

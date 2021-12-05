@@ -72,13 +72,3 @@ body {
   .container {
       justify-content: center;
   }
-  .col-sm-10  {
-      padding: 10px 0 0 10px;
-      border-style: solid;
-      justify-content: center;
-      }
-  
-
-  .border {
-      padding: 10px 30px 0 0 ;
-  }
