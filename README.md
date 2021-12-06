@@ -16,7 +16,6 @@ https://avc0021.github.io/Work-Day-Scheduler/
 ## Screenshot
 (http://images/Work-Day-Scheduler_index.html)
 
-
 ## Contribution
 Made by Adam Castro
 
